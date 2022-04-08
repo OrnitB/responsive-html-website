@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  width: 256px;
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+.mainBody {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebeff2;
+  height: 60px;
+  padding: 0 36px;
+  background-color: #ffffff;
+}
+
+#globalsearch {
+  color: #90a0b7;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.rightside {
+  display: flex;
+}
+
+.sidebar-title {
+  height: 60px;
+  border-bottom: 1px solid #ebeff2;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  color: #109cf1;
+}
+.profileinfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  height: 85px;
+}
+
+.profilepic1 {
+  border-radius: 50%;
+}
+
+.emailname {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #90a0b7;
+}
+
+.name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #192a3e;
+}
+
+.sierraemail {
+  color: #90a0b7;
+}
+
+#dashboard {
+  color: #109cf1;
+}
+
+.buttons {
+  border-bottom: 1px solid #ebeff2;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+.bottomsidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  height: 40%;
+}
+
+.settings .toggle {
+  display: flex;
+}
+
+.settings {
+  font-weight: 700;
+  font-size: 13px;
+  color: #334d6e;
+  display: flex;
+  margin-top: 10px;
+}
+
+.toggle {
+  display: flex;
+  color: #90a0b7;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.sidebarItem {
+  padding-top: 20px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: stretch;
+  font-weight: 700;
+  font-size: 13px;
+  color: #334d6e;
+}
+
+span {
+  padding-left: 14px;
+}
+
+.squares {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.big-container {
+  height: 718px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.small-container {
+  height: 344px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+.smalls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tasksCompleted {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.taske8outof10 {
+  color: #334d6e;
+  font-weight: 650;
+  font-size: 13px;
+}
+
+.othernames {
+  color: #707683;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.show {
+  color: #6a707e;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.thisweek,
+.monthlythismonth {
+  color: #109cf1;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.barimages {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.whitebar {
+  position: relative;
+  left: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.greenbar {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.date {
+  position: relative;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334d6e;
+}
+
+.day1,
+.day3,
+.day4,
+.day5,
+.day6,
+.day7 {
+  opacity: 0.5;
+}
+
+.num {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.calender {
+  border-bottom: 1px solid #ebeff2;
+  margin-top: 20px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+#d23 {
+  color: white;
+  background-color: #109cf1;
+  border-radius: 20px;
+  height: 24px;
+  width: 24px;
+  margin-left: 13px;
+  padding-right: 13px;
+  padding-top: 2px;
+}
+
+span#d24.num {
+  color: #109cf1;
+}
+
+span#mon.day2 {
+  color: #109cf1;
+}
+
+.child-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.people {
+  width: 90%;
+  height: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin: 24px auto auto 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}
+
+.rightsidepeople1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.leftsidepeople1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.peopleinfo {
+  display: flex;
+  padding-left: 13px;
+  margin-top: 10px;
+}
+
+.reminder {
+  display: flex;
+}
+
+.topside {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 5px;
+}
+
+.smallrightside {
+  width: 38%;
+  display: flex;
+}
+
+.arrow {
+  margin-bottom: 3px;
+}
+
+.date,
+.tasktitle,
+.deals,
+.tasks {
+  color: black;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.duedate {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.duedate1 {
+  color: #4c5862;
+  opacity: 0.5;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.duedate2 {
+  color: #4c5862;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.remindercallevent {
+  color: #90a0b7;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.bottomBigContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #109cf1;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.graphs {
+  display: flex;
+  justify-content: center;
+}
+
+.small-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#Completed {
+  color: white;
+  background-color: #2ed47a;
+  padding-right: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#ended {
+  color: white;
+  background-color: #f7685b;
+  padding: 2px 30 2px 30px;
+  border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 400px) {
+  .mainBody {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .monthlythismonth {
+    width: 300px;
+    margin-right: -80px;
+  }
+  .smalls {
+    margin-top: 20px;
+  }
+
+  #bottomSmallContainer.small-container {
+    margin-top: 20px;
+  }
+
+  .big-container {
+    height: 130%;
+  }
+
+  .topside {
+    width: 100%;
+    display: flex;
+  }
+
+  .smallrightside {
+    right: 0;
+    margin-right: 0;
+    display: flex;
+    right: 0;
+  }
+
+  .bottomBigContainer {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainBody {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .greenbar {
+    max-width: 80%;
+  }
+
+  .small-container {
+    margin-right: -75px;
+    width: 100%;
+  }
+
+  .smalls {
+    margin-top: 20px;
+  }
+
+  #bottomSmallContainer.small-container {
+    margin-top: 20px;
+  }
+
+  .big-container {
+    height: 150%;
+  }
+
+  .bottomBigContainer {
+    margin-bottom: 20px;
+  }
+
+  .topside {
+    width: 100%;
+    display: flex;
+  }
+
+  .smallrightside {
+    right: 0;
+    margin-right: 0;
+    display: flex;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .squares {
+    flex-direction: column;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .smalls {
+    margin-top: 20px;
+  }
+
+  #bottomSmallContainer.small-container {
+    margin-top: 20px;
+  }
+
+  .whitebar {
+    max-width: 95%;
+  }
+
+  .greenbar {
+    max-width: 75%;
+  }
+
+  .monthlythismonth {
+    width: 100%;
+    padding-right: -110px;
+  }
+}
